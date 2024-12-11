@@ -1,10 +1,9 @@
 import NavBar from "@/components/NavBar.vue";
 import MoviesCard from "@/components/MoviesCard.vue";
 import SeriesCard from "@/components/SeriesCard.vue";
-import PaginatorPages from "@/components/PaginatorPages.vue"
+import PaginatorPages from "@/components/PaginatorPages.vue";
 
 //import useToast from "primevue/usetoast" const toast = useToast()
-
 
 import {App} from "vue";
 

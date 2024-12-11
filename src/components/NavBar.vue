@@ -68,8 +68,10 @@
   </div>
 </template>
  
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent ({
   name: 'NavBar',
   data() {
     return {
@@ -85,16 +87,16 @@ export default {
     };
   },
   methods: {
-    navigateTo(route) {
+    navigateTo(route: string) {
       this.$router.push(route);
       this.sidebarVisible = false;
     },
     toggleSideBar() {
       this.sidebarVisible = !this.sidebarVisible;
     },
-    isActive(path){ 
+    isActive(path: string){ 
       return this.$route.path === path;
     }
   }
-};
+});
 </script>
